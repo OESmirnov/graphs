@@ -1,8 +1,10 @@
 package ru.sgu.csit.csc.graphs.labeled;
 
+import ru.sgu.csit.csc.graphs.BaseGraph;
+
 import java.util.*;
 
-public class AdjacencyListsEdgeLabeledGraph<L> extends BaseEdgeLabeledGraph<L> {
+public class AdjacencyListsEdgeLabeledGraph<L> extends BaseGraph implements EdgeLabeledGraph<L> {
     private final List<List<Edge<L>>> adjacencyLists;
 
     public AdjacencyListsEdgeLabeledGraph(int vertexCount, Type type) {
